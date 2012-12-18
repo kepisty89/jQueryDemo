@@ -8,13 +8,13 @@
 	// Plugin name and definition.
 	$.fn.imageTip = function(imageData){
 		
-		// Log plugin work.
-		console.log("ImageTip plugin is working now.");
+	// Log plugin work.
+	console.log("ImageTip plugin is working now.");
 		
-		// Set default options for options parameter.
-		var settings = $.extend({ imgSrc: "imageThing" }, imageData);
+	// Set default options for options parameter.
+	var settings = $.extend({ imgSrc: "imageThing" }, imageData);
 
-
+	// Plugin functions.
 	var changeTooltipPosition = function(event) {
 		var tooltipX = event.pageX - 8;
 		var tooltipY = event.pageY + 8;
@@ -31,10 +31,12 @@
 		$('div.tooltip').fadeOut();		
 	};
  
+ 	// Plugin execution.
+ 	// Binding is used.
 	this.bind({
-		mousemove : changeTooltipPosition,
+		mousemove  : changeTooltipPosition,
 		mouseenter : showTooltip,
-		mouseleave: hideTooltip
+		mouseleave : hideTooltip
 		});
 	};
 

@@ -19,7 +19,7 @@ h1 {
 h2 {	
 	width:588px; 
 	height:60px; 
-	background:url(images/image1.gif) 250px 25px no-repeat #3C3633; 
+	background: #3C3633; 
 	color:#D5D5D5; 
 	line-height:60px;;
 	padding-top: 10px;
@@ -85,7 +85,7 @@ h3 {
  *
  */
 #mainbodytopPan{
-	background: url(images/bodytopbg.png) 0 0 repeat-x #3B3532; 
+	background: 0 0 repeat-x #3B3532; 
 	color: #B6B6B6; 
 	margin: 0 auto;
 }
@@ -100,7 +100,7 @@ h3 {
 
 #bodytopPan p span.yellow{background:#3C3633; color:#FFD900;}
 
-#mainbodyPan{background:url(images/bodybg.gif) 0 0 repeat-x #554D49; color:#B6B6B6; margin:0 auto;}
+#mainbodyPan{background: 0 0 repeat-x #554D49; color:#B6B6B6; margin:0 auto;}
 
 #bodyPan{width:588px; /*height:400px;*/ position:relative; margin:0 auto; padding:50px 95px 0;}
 
