@@ -1,18 +1,43 @@
+	
+	/* * * * * * * * * * * * * * * * * * *
+	 * Image tool-tip plugin for jQuery. *
+	 * * * * * * * * * * * * * * * * * * */
+
 (function($){
 	
 	// Plugin name and definition.
-	$.fn.imagetip = function(imageData){
+	$.fn.imageTip = function(imageData){
 		
-		console.log("image tip working!");
+		// Log plugin work.
+		console.log("ImageTip plugin is working now.");
 		
 		// Set default options for options parameter.
-		var settings = $.extend({ imgSrc: "./images/not_found.jpg", divId: "imageTipNOT_SET" }, imageData);
-		
-		// This - input on which this plugin is called.
-		$(this).parent().append('<div id="' + settings.divId + '"></div>');		
-		$('#' + settings.divId).append('<img src="' + setting.imgSrc + '" />');		
-		
-		console.log("image tip end.");
+		var settings = $.extend({ imgSrc: "imageThing" }, imageData);
+
+
+	var changeTooltipPosition = function(event) {
+		var tooltipX = event.pageX - 8;
+		var tooltipY = event.pageY + 8;
+		$('div.tooltip').css({top: tooltipY, left: tooltipX});
 	};
+ 
+	var showTooltip = function(event) {
+		$('div.tooltip').remove();
+		$('<div class="tooltip"><img src="' + settings.imgSrc + '" /></div>').appendTo('body').hide().fadeIn();
+		changeTooltipPosition(event);
+	};
+ 
+	var hideTooltip = function() {
+		$('div.tooltip').fadeOut();		
+	};
+ 
+	this.bind({
+		mousemove : changeTooltipPosition,
+		mouseenter : showTooltip,
+		mouseleave: hideTooltip
+		});
+	};
+
+	return this;
 	
 })(jQuery);

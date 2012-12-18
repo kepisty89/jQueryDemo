@@ -1,34 +1,73 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="./styles/effects.css" rel="stylesheet" type="text/css" media="all">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<link href="./styles/effects.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Margarine">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cinzel">
 	<script type="text/javascript" src="./scripts/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="./scripts/effects.js"></script>
-	<title>Effects</title>
+	<script type="text/javascript" src="./scripts/effects.js"></script>	
+	<title>Project 3 - jQuery</title>
 </head>
 <body>
-	<h1>Effects.</h1>
-		
-	<h3>Slide menu</h3>
-	<div id="hwSlide" style="background-color: #E2FAE1">
+<div id="mainbodytopPan">
+  <div id="bodytopPan">
+  	<h2>Effects</h2>
+	<p>This demo contains four <span class="yellow">jQuery</span> effects usage:</p>
+	<ul>
+		<li>Sliding menu</li>
+		<li>Tabs</li>
+		<li>Animation</li>
+		<li>Accordion</li>
+	</ul>
+  </div>
+</div>
+<div id="mainbodyPan">
+  <div id="bodyPan">
+  	<h3>Slide menu</h3>
+	<div id="hwSlide">
 		<ul id="slideMenu">
 			<li class="menuItem">Pizza <strong>3 submenus</strong>
 				<ul>
-					<li>Napoli</li>				
-					<li>Hawaii</li>
-					<li>Salami</li>
+					<li class="menuItem">Napoli
+						<ul>
+							<li class="menuItem">With chesee.
+								<ul>
+									<li>BIG 10$</li>
+									<li>SMALL 5$</li>
+								</ul>
+							</li>
+							<li class="menuItem">Without chesee.
+								<ul>
+									<li>BIG 10$</li>
+									<li>SMALL 5$</li>
+								</ul>
+							</li>
+						</ul>					
+					</li>				
+					<li class="menuItem">Hawaii
+						<ul>
+							<li>BIG 10$</li>
+							<li>SMALL 5$</li>
+						</ul>
+					</li>
+					<li class="menuItem">Salami</li>
 				</ul>
 			</li>
 			
 			<li class="menuItem">Pasta <strong>1 submenus</strong>
 				<ul>
-					<li>Carbonara</li>							
+					<li class="menuItem">Carbonara
+						<ul>
+							<li>BIG 7$</li>
+							<li>SMALL 2$</li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	
+
 	<h3>Tabs</h3>
 	<div id="hwTab">
 		<ul>
@@ -36,17 +75,17 @@
 			<li id="tabHeader2" tabId="2">Second tab</li>
 			<li id="tabHeader3" tabId="3">Third tab</li>
 		</ul>
-		<div id="tabContent1" style="border: 1px solid; background-color: #85D6B0;">
+		<div id="tabContent1" style="border: 1px solid; background-color: #85D6B0; padding: 10px;">
 			<div>
 				<p>First Tab text: Hello World!</p>
 			</div>			
 		</div>
-		<div id="tabContent2" style="border: 1px solid; background-color: #FCBA62;">
+		<div id="tabContent2" style="border: 1px solid; background-color: #FCBA62; padding: 10px;">
 			<div>
 				<p>Second tab text: Hello jQuery!</p>
 			</div>
 		</div>
-		<div id="tabContent3" style="border: 1px solid; background-color: #A8FA82;">
+		<div id="tabContent3" style="border: 1px solid; background-color: #A8FA82; padding: 10px;">
 			<div>
 				<p>Third tab text: Hello Hello!</p>
 			</div>
@@ -54,13 +93,29 @@
 	</div>
 	
 	<h3>Animate</h3>
-	<div id="hwAnimate">
-		<p>Click Pacman!</p>
-		<div style="background-color: #6D939E; font-size: 7em;">
+	<div id="hwAnimate">		
+		<div style="font-size: 7em; color: black;">
 			<b id="dot1" style="margin-left: 40px;">&#149;</b> <b id="dot2">&#149;</b> <b id="dot3">&#149;</b> 
-			<img id="pacman" src="./images/pacman.png" alt="Pizza image for animate." />
+			<img id="pacman" src="./images/pacman.png" alt="Pacman!" />
 		</div>
 	</div>
-	
+
+	<h3>Accordion</h3>
+	<div id="hwAccordion" style="margin-bottom: 100px;">
+		<div class="accordionItem">This is an accordion menu.
+			<div class="accordionContent" style="background-color: #1C8243;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+		</div>
+		<div class="accordionItem">Click me!
+			<div class="accordionContent" style="background-color: #FFE329;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+		</div>
+		<div class="accordionItem">And here.
+			<div class="accordionContent" style="background-color: #E7A916;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
+		</div>
+		<div class="accordionItem">Once again!
+			<div class="accordionContent" style="background-color: #45E5B0;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</div>
+		</div>
+	</div>	
+</div>
+</div>
 </body>
 </html>

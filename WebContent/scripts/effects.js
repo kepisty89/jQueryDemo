@@ -5,11 +5,18 @@ $(document).ready(function () {
 
 	/**
 	 * Sliding menu.
-	 */
-	$('.menuItem').children().slideToggle();
-	$('.menuItem').click(function(){	
-		$(this).children().slideToggle();		
-	}).children().click(function(){
+	 */	
+	// Slide up menu first time, when DOM is ready.
+	$('.menuItem').children().hide();
+
+	$('.menuItem').click(function(){
+
+		// Slide all children.
+		$(this).children().slideToggle();	
+
+		// Prevent sliding when clicking 
+		// on children items that are NOT same (menuItem) class.
+	}).children(':not(".menuItem")').click(function(){
 		return false;
 	});	
 	
@@ -21,11 +28,11 @@ $(document).ready(function () {
 			$('#dot1').text("");
 		});
 		
-		$(this).animate({"left": "-=110px"}, 700, function(){
+		$(this).animate({"left": "-=90px"}, 700, function(){
 			$('#dot2').text("");
 		});
 		
-		$(this).animate({"left": "-=110px"}, 700, function(){
+		$(this).animate({"left": "-=75px"}, 700, function(){
 			$('#dot3').text("");
 		});		
 	});
@@ -57,6 +64,25 @@ $(document).ready(function () {
 	/**
 	 * Accordion.
 	 */
-	// TODO
-	
+	 $('.accordionItem').children().hide();
+	 $('.accordionItem').click(function(){
+	 	
+	 	// Get current accordion item index.
+	 	var clickedIndex = $(this).index();	 
+
+		// If clicked index is different than others - fold them.	 	
+	 	$('.accordionItem').each(function(index){
+
+	 		if (clickedIndex != $(this).index()){
+	 			$(this).children().slideUp();
+	 		}else{	 			
+	 			$(this).children().slideToggle();
+	 		}
+	 		
+	 	});
+
+	 }).children().click(function(){
+	 	return false;
+	 });
+
 });

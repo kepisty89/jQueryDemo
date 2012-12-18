@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="./styles/effects.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Margarine">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<script type="text/javascript" src="./scripts/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./scripts/effects.js"></script>
+	<title>Effects</title>
+</head>
+<body>	
+	<h3>Slide menu</h3>
+	<div id="hwSlide">
+		<ul id="slideMenu">
+			<li class="menuItem">Pizza <strong>3 submenus</strong>
+				<ul>
+					<li class="menuItem">Napoli
+						<ul>
+							<li>With chesee.</li>
+							<li>Without chesee.</li>
+						</ul>					
+					</li>				
+					<li class="menuItem">Hawaii
+						<ul>
+							<li>BIG 10$</li>
+							<li>SMALL 5$</li>
+						</ul>
+					</li>
+					<li class="menuItem">Salami</li>
+				</ul>
+			</li>
+			
+			<li class="menuItem">Pasta <strong>1 submenus</strong>
+				<ul>
+					<li class="menuItem">Carbonara
+						<ul>
+							<li>BIG 7$</li>
+							<li>SMALL 2$</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<h3>Tabs</h3>
+	<div id="hwTab">
+		<ul>
+			<li id="tabHeader1" class="selectedTab" tabId="1">First tab</li>
+			<li id="tabHeader2" tabId="2">Second tab</li>
+			<li id="tabHeader3" tabId="3">Third tab</li>
+		</ul>
+		<div id="tabContent1" style="border: 1px solid; background-color: #85D6B0;">
+			<div>
+				<p>First Tab text: Hello World!</p>
+			</div>			
+		</div>
+		<div id="tabContent2" style="border: 1px solid; background-color: #FCBA62;">
+			<div>
+				<p>Second tab text: Hello jQuery!</p>
+			</div>
+		</div>
+		<div id="tabContent3" style="border: 1px solid; background-color: #A8FA82;">
+			<div>
+				<p>Third tab text: Hello Hello!</p>
+			</div>
+		</div>
+	</div>
+	
+	<h3>Animate</h3>
+	<div id="hwAnimate">
+		<p>Click Pacman!</p>
+		<div style="font-size: 7em;">
+			<b id="dot1" style="margin-left: 40px;">&#149;</b> <b id="dot2">&#149;</b> <b id="dot3">&#149;</b> 
+			<img id="pacman" src="./images/pacman.png" alt="Pizza image for animate." />
+		</div>
+	</div>
+
+	<h3>Accordion</h3>
+	<div id="hwAccordion">
+		<div class="accordionItem">Accordion 1
+			<div class="accordionContent" style="background-color: #85D6B0;">Lorem ipsum1</div>
+		</div>
+		<div class="accordionItem">Accordion 2
+			<div class="accordionContent" style="background-color: #FCBA62;">Lorem ipsum2</div>
+		</div>
+		<div class="accordionItem">Accordion 3
+			<div class="accordionContent" style="background-color: #A8FA82;">Lorem ipsum3</div>
+		</div>
+		<div class="accordionItem">Accordion 4
+			<div class="accordionContent" style="background-color: #45E5B0;">Lorem ipsum4</div>
+		</div>
+	</div>	
+</body>
+</html>
