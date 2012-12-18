@@ -57,8 +57,7 @@ $(document).ready(function () {
 		
 		// Set this tab selected.
 		$('li[id*="tabHeader"]').removeAttr("class");
-		$(this).attr('class', 'selectedTab');
-		
+		$(this).attr('class', 'selectedTab');		
 	});
 
 	/**
