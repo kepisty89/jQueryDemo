@@ -5,9 +5,9 @@ $(document).ready(function() {
 
 	var changeColor = function(event, divElement) {
 		if (event) {			
-			divElement.css("background-color", "#DFF2E7");
+			divElement.css("background-color", "#EADB38");
 		}else{			
-			divElement.css("background-color", "#D8EBF0");
+			divElement.css("background-color", "#FAF4B6");
 		};
 	}	
 

@@ -23,7 +23,7 @@
 			if ($.trim(text) === ""){
 				$(this).val(settings.suggestionText);
 				$(this).css('color', '#99A2C7');
-				$(this).parent().parent().css('background-color', '#FFD9D9');
+				$(this).parent().parent().css('background-color', '#BD2D2D');
 			}else{
 				$(this).css('color', 'black');
 			}
