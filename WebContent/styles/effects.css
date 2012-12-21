@@ -51,6 +51,7 @@ h3 {
 #hwSlide {
 	text-align: left;
 	color: black;
+	list-style: url(../images/forkBullet.gif);
 }
 
 .menuItem {

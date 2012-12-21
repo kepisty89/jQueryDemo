@@ -14,40 +14,59 @@
 <body>
 <div id="mainbodytopPan">
   <div id="bodytopPan">
+    <div class="popUp">CapsLock info.</div>
   	<h2>Form</h2>
-	<p>This demo contains fancy <span class="yellow">jQuery</span> form styling/effects.</p>	
+    <p>This demo contains fancy <span class="yellow">jQuery</span> form styling/effects.</p>	
+    <ul id="slideMenu">
+      <li class="whatsDone" style="margin-top: 10px;">What is used?
+        <ul>
+          <li>own plugins</li>
+          <li>plugins settings</li>
+          <li>css changes via jQuery</li>
+          <li>chaining</li>
+          <li>detecting key pressed</li>
+          <li>data validation as plugin</li>
+          <li>pop-up tool tips</li>
+          <li>events</li>
+          <li>own functions</li>
+          <li>animation</li>
+          <li>each</li>
+          <li>attributes</li>
+        </ul>    
+      </li>
+    </ul>
   </div>
 </div>
 <div id="mainbodyPan">
   <div id="bodyPan">
   	<div id="hwForm">
-      <div id="formContainer">        
+      <div id="formContainer">      
         <h1>Please fill this form</h1>
     		  <div class="formField">
     			<h4>First name</h4>
     			<div class="toolTip">
-    				<input type="text">
+    				<input type="text" name="name">
     				<span class="tip">Type in first name.</span>
     			</div>
         </div>
       		<div class="formField">
       			<h4>Last name</h4>
       			<div class="toolTip">
-      				<input type="text">
+      				<input type="text" name="surname">
       				<span class="tip">Type in last name.</span>
       			</div>
       		</div>
       		<div class="formField">
       			<h4>Login</h4>
       			<div class="toolTip">
-      				<input type="text">
+      				<input type="text" name="login">
       				<span class="tip">Choose your login.</span>
       			</div>  			
       		</div>
       		<div class="formField">
       			<h4>Password</h4>
       			<div class="toolTip">
-      				<input type="text">
+      				<input type="password" name="password">
       				<span class="tip">Choose P@sSw0rD.</span>
       		</div>
     		</div>
@@ -55,10 +74,12 @@
       <div id="formInstructions">
         <p><em>L</em>orem ipsum dolor sit amet, consectetur   adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         <p><em>D</em>uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
-        <input type="button" value="OK, done!" style="width: 100px; height: 30px; margin-left: 90px; margin-top: 10px;">
-      </div>
-    </div>
+        <input name="sendIt" class="checkFormButton" type="button" value="OK, done!" style="width: 100px; height: 30px; margin-left: 90px; margin-top: 10px;">
+      </div>    
   </div>
+  <div id="hwThankYou">
+      <p class="thankYou">Thank you.</p>
+    </div>
 </div>
 </body>
 </html>

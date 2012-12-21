@@ -28,11 +28,11 @@ $(document).ready(function () {
 			$('#dot1').text("");
 		});
 		
-		$(this).animate({"left": "-=90px"}, 700, function(){
+		$(this).animate({"left": "-=70px"}, 700, function(){
 			$('#dot2').text("");
 		});
 		
-		$(this).animate({"left": "-=75px"}, 700, function(){
+		$(this).animate({"left": "-=60px"}, 700, function(){
 			$('#dot3').text("");
 		});		
 	});

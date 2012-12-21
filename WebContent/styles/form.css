@@ -1,3 +1,8 @@
+/*
+ * Main styling.
+ * 
+ */
+
 body {
 	padding: 0px; 
 	margin: 0px; 
@@ -46,7 +51,7 @@ em {
 
 
 /*
- * Homework styling 
+ * Homework styling.
  * 
  */
 
@@ -65,6 +70,26 @@ em {
 	bottom: 300px;	
 	width: 300px;
 	height: 500px;
+}
+
+#slideMenu {		
+	list-style: url(../images/bulletTick.png);
+}
+
+.popUp {
+	color: black;
+	position: fixed;
+	left: 480px;
+	top: -5px;
+	width: 200px;
+	height: 40px;
+	background-color: #DBD7D9;
+	border: solid #ADADAD 0 2px;
+	border-radius: 5px;		
+	z-index: 1000;
+	opacity: 0.8;
+	padding-top: 12px;
+	padding-left: 50px;
 }
 
 .formField {
@@ -94,8 +119,13 @@ em {
     width: 100px;
 }
 
+.thankYou {
+	font-family: 'Tangerine';
+	font-size: 12em;	
+}
+
 /*
- * Other
+ * Other styling.
  *
  */
 #mainbodytopPan{
@@ -112,13 +142,34 @@ em {
 	padding: 22px 95px 20px;
 }
 
-#bodytopPan p span.yellow{background:#3C3633; color:#FFD900;}
+#bodytopPan p span.yellow{
+	background: #3C3633; 
+	color: #FFD900;
+}
 
-#mainbodyPan{background: 0 0 repeat-x #554D49; color:#B6B6B6; margin:0 auto;}
+#mainbodyPan{
+	background: 0 0 repeat-x #554D49; 
+	color: #B6B6B6; 
+	margin: 0 auto;
+}
 
-#bodyPan{width:588px; /*height:400px;*/ position:relative; margin:0 auto; padding:50px 95px 0;}
+#bodyPan{
+	width: 588px; 
+	/*height:400px;*/ 
+	position: relative;
+	margin: 0 auto; 
+	padding: 50px 95px 0;
+}
 
-#bodyPan h3{width:500px; height:46px; display:block; background:#554D49; color:#D5D5D5; font:36px/46px Arial, Helvetica, sans-serif; font-weight:normal;}
+#bodyPan h3{
+	width: 500px; 
+	height: 46px; 
+	display: block;
+	background: #554D49;
+	color: #D5D5D5; 
+	font: 36px/46px Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
 
 #bodyPan p.border{
 	width: 588px; 
